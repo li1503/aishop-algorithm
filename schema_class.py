@@ -8,10 +8,10 @@ class Schema:
         self.schema = StructType([
         StructField("Name", StringType()),
         StructField("Region", StringType()),
-        StructField("C", StringType()), 
-        StructField("D", StringType()), 
-        StructField("to import", IntegerType()),
-        StructField("to export", IntegerType())
+        StructField("col3", StringType()), 
+        StructField("col4", StringType()), 
+        StructField("to_import", IntegerType()),
+        StructField("to_export", IntegerType())
         ])
 
 

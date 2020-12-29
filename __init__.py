@@ -11,7 +11,7 @@ if __name__ == '__main__':
     print("------------------------------------start from here------------------------------------------------")
     ini_schema = Schema()
     data_schema = ini_schema.get_schema()
-    df = spark.read.csv('./src/fromdata.csv', header=True, mode="DROPMALFORMED", schema=data_schema)
+    df = spark.read.csv('./src/fromdata.csv', header=False, mode="DROPMALFORMED", schema=data_schema)
     df.show()
 
     spark.stop()    
