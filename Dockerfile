@@ -33,6 +33,9 @@ WORKDIR /code
 # install dependencies
 RUN pip install -r requirements.txt
 
+# run virtual env
+CMD ["source", "/code/venv/Scripts/activate"]
+
 # command to run on container start
 CMD ["python", "__init__.py"]
 
